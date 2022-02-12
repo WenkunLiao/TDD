@@ -24,5 +24,9 @@ class TestCase(unittest.TestCase):
         input = 'aaAA1111'
         self.assertFalse(check_pwd(input))
 
+    def test6(self):
+        input = 'aaAA11~~//'
+        self.assertFalse(check_pwd(input))
+
 if __name__ == '__main__':
     unittest.main()
