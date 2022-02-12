@@ -8,6 +8,10 @@ class TestCase(unittest.TestCase):
         input = 'asDf1122~'
         self.assertTrue(check_pwd(input))
 
+    def test2(self):
+        input ='11111111'
+        self.assertFalse(check_pwd(input))
+
 
 if __name__ == '__main__':
     unittest.main()
